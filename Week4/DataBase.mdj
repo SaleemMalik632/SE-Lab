@@ -2920,8 +2920,8 @@
 										"$ref": "AAAAAAGKy/XiI2QMCes="
 									},
 									"font": "Arial;13;1",
-									"left": 888,
-									"top": 821,
+									"left": 1024,
+									"top": 837,
 									"width": 160,
 									"height": 13,
 									"text": "UsetChat"
@@ -2946,22 +2946,22 @@
 												"$ref": "AAAAAAGKy/YQxmQYKQw="
 											},
 											"font": "Arial;13;0",
-											"left": 893,
-											"top": 844,
+											"left": 1029,
+											"top": 860,
 											"width": 150,
 											"height": 13
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 888,
-									"top": 839,
+									"left": 1024,
+									"top": 855,
 									"width": 160,
 									"height": 23
 								}
 							],
 							"font": "Arial;13;0",
-							"left": 888,
-							"top": 816,
+							"left": 1024,
+							"top": 832,
 							"width": 160,
 							"height": 184,
 							"nameLabel": {
