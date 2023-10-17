@@ -2,8 +2,11 @@ const express = require('express');
 const router = express.Router();
 const Api_Function = require('../controllers/productController');
 
-router.post('/Prodect', Api_Function.AddData);
-router.get('/Allprodects', Api_Function.getallProducts);
+router.post('/prodect', Api_Function.AddData);
+router.get('/all', Api_Function.getallProducts);
+router.put('/update/:id', Api_Function.update);
+router.delete('/delete/:id', Api_Function.Delete);
+
 
 module.exports = router;
 

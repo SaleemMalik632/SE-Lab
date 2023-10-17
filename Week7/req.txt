@@ -1,0 +1,18 @@
+componet of the api
+
+name
+card type
+card name
+card number
+card holder name
+issue date
+card expriy data
+card cpbi number
+
+fname
+lname
+date of birth
+role(supper user , admin , montrater)
+email
+isverified
+ 
