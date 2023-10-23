@@ -4,7 +4,7 @@ const Product = require('../model/Product');
 // this is adding data to the database table by using the Product model (model/Product.js)
 async function AddData(req, res) {
   try {
-
+    console.log(req.body);
     const result = await Product.create(req.body);
     res.status(201).json(result);
 
@@ -17,7 +17,7 @@ async function AddData(req, res) {
 async function getallProducts(req, res) {
   try {
     const Data = await Product.find();
-    res.json(Data);
+     res.status(200).json(Data);
   } catch (error) {
     res.status(500).json({ error: error.mesage })
   }
