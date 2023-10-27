@@ -18,10 +18,10 @@ const  AdminSchema   = mongoose.Schema({
         type: String,
         require: true,
         enum: ["Admin", "User", "Moderator"], // enum means string objects User, Admin, Moderator
-
     },
-
     }
+    
+    
 );
 // Create the collection model
 const User = mongoose.model('User', AdminSchema);
