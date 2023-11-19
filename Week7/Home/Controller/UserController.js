@@ -1,11 +1,12 @@
 const User = require('../Models/User');
+const MyUser = require('../Models/MyUser');
 const jwt = require('jsonwebtoken');
 
 
 // making the get api
 async function GetAllUser(Req, Res) {
     try {
-        const Data = await User.find();
+        const Data = await MyUser.find();
         console.log(Data);
         Res.status(200).json(Data);
     } catch (error) {
@@ -13,6 +14,10 @@ async function GetAllUser(Req, Res) {
         Res.status(500).json({ error: error.mesage })
     }
 }
+// Poat Api to Post all the Data in the Database
+
+
+
 
 // Post Api to Post all the Data in the Database
 async function AddNewUser(Req, Res) {
@@ -68,6 +73,24 @@ async function Wellcome(req , res) {
 }
 
 
+
+// post request for the MyUser login
+async function PostProjetUser(Req, Res) {
+    try {
+        const Data = Req.body;
+        console.log(Data);
+        const result = await MyUser.create(Data);
+        Res.status(201).json(result);
+    } catch (error) {
+        Res.status(500).json({ error: error.mesage })
+    }
+} 
+
+
+
+
+
+
 const GenerateToken = (user) => {
     const payload = {
         Role: user.Role,
@@ -90,6 +113,7 @@ module.exports = {
     UpdateUser,
     login,
     Wellcome,
+    PostProjetUser,
 };
 
 
